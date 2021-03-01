@@ -1,0 +1,25 @@
+// Typography
+// ==========
+// Font sizes and families
+//
+// stylelint-disable indentation
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/muliRegular.ttf') format('truetype');
+}
+// Font Families
+// -------------
+$font-fallbacks: (
+  sans-serif: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+  serif: 'Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif',
+);
+
+$font-families: (
+  primary: ('Helvetica', map-get($font-fallbacks, 'sans-serif')),
+  secondary: ('Open Sans', map-get($font-fallbacks, 'serif')),
+  third: ('Lora', map-get($font-fallbacks, 'serif')),
+  fourth: ('Muli', map-get($font-fallbacks, 'serif-serif')),
+) !default;

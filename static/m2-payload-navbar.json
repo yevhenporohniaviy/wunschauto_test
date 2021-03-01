@@ -1,0 +1,19 @@
+{
+  "section_navbar":{
+    "image":{
+      "url":"https://wunschauto.onrender.com/_nuxt/img/logowhite.0698d1e.png",
+      "page_links":[
+        {
+          "title":"Leistungen"
+        },
+        {
+          "title":"FAQs"
+        },
+        {
+          "title":"Über mich"
+        }
+      ],
+      "button":"Kontakt"
+    }
+  }
+}

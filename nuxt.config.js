@@ -4,7 +4,6 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'WunschautoTestSite',
@@ -17,17 +16,23 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Lora&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'
+      }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: ['vue-slick-carousel/dist/vue-slick-carousel.css', 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [{ src: './plugins/vue-slick-carousel.js' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -39,6 +44,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
+    '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
   ],
 

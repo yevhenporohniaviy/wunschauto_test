@@ -9,10 +9,16 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vue-slick-carousel": "^1.0.6",
+    "vuex": "^3.6.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sass": "^1.32.7",
+    "sass-loader": "^10.1.1"
+  }
 }
